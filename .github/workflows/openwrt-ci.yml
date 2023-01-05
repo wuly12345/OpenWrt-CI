@@ -60,10 +60,10 @@ jobs:
 
       - name: Update feeds
         run: |
-          #./scripts/feeds update -a
-          #./scripts/feeds install -a
-          cd lede && ./scripts/feeds update -a
-          cd lede && ./scripts/feeds install -a
+          ls -al
+          ./scripts/feeds update -a
+          ./scripts/feeds install -a
+
 
       - name: Generate configuration file
         run: |
