@@ -57,14 +57,17 @@ jobs:
           # ln -s /mnt/openwrt/staging_dir ./staging_dir
 
           df -h
-      #- name: 同步最新的源码
-        #run: |
+      - name: 同步最新的源码
+        run: |
+          git clone https://github.com/coolsnowwolf/lede -b master openwrt
           #git remote add openwrt https://github.com/coolsnowwolf/lede.git
           #git pull openwrt master
           #git remote -v
 
       - name: Update feeds
         run: |
+          ls -al
+          cd openwrt
           ls -al
           ./scripts/feeds update -a
           ./scripts/feeds install -a
