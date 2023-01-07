@@ -80,8 +80,8 @@ jobs:
           cd openwrt
           ./scripts/feeds update -a
           ./scripts/feeds install -a
-          make clean
-          ./scripts/feeds clean
+          #make clean
+          #./scripts/feeds clean
 
 
       - name: Generate configuration file
