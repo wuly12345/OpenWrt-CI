@@ -100,7 +100,7 @@ jobs:
           #CONFIG_KERNEL_BUILD_DOMAIN="Azure"
           CONFIG_TARGET_bcm47xx=y
           CONFIG_TARGET_bcm47xx_mips74k=y
-          CONFIG_TARGET_bcm47xx-mips74k-linksys_e4200-v1=y
+          CONFIG_TARGET_bcm47xx_mips74k_DEVICE_linksys_e4200-v1=y
           CONFIG_TARGET_BOARD="bcm47xx"
           CONFIG_PACKAGE_ca-bundle=y
           CONFIG_PACKAGE_kcptun-client=y
