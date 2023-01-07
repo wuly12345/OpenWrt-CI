@@ -78,10 +78,10 @@ jobs:
       - name: Update feeds
         run: |
           cd openwrt
-          make clean
-          ./scripts/feeds clean
           ./scripts/feeds update -a
           ./scripts/feeds install -a
+          make clean
+          ./scripts/feeds clean
 
 
       - name: Generate configuration file
